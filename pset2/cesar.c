@@ -29,7 +29,7 @@ main(int argc, char *argv[])
     {
         if( ncrypto[i] >= 'A' && ncrypto[i] <= 'Z')
         {
-            printf("%c", (((ncrypto[i] - 'A') + k) % 26) + 'A');
+            printf("%c", (ncrypto[i] + k) % 65 + 'A');
 
         }else if (ncrypto[i] >= 'a' && ncrypto[i] <= 'z')
         {
